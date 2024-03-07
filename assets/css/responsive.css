@@ -18,6 +18,8 @@
         display: var(--fa-display,inline-block) !important;
     }
     .hero-section {
+        position: fixed;
+        text-align: center;
         align-items: center;
     }
     .hero-section .info {

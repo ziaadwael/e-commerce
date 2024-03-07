@@ -110,7 +110,7 @@
         font-size: 1.2rem;
     }
     .services-section {
-        margin: 30rem auto;
+        margin: 25rem auto;
     }
     .services-section .box {
         width: 50%;
@@ -132,7 +132,7 @@
         padding: unset;
     }
     .services-section::before {
-        top: -28rem;
+        top: -23rem;
         width: 100%;
         text-align: center;
     }

@@ -558,6 +558,7 @@ footer.footer-section .copyrights {
 
 .copyrights {
     color: #fff;
+    padding: 0 15px;
 }
 .copyrights span a {
     color: var(--main-color);

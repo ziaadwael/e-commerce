@@ -30,16 +30,93 @@
                     <li><a href="#about-section">About</a></li>
                     <li><a href="#experience-section">Experience</a></li>
                     <li><a href="#services-section">Services</a></li>
-                    <li><a href="#review-section">Review</a></li>
                     <li><a href="#contact-section">Contact</a></li>
                     <li><a href="#footer-section">Footer</a></li>
                 </ul>
             </nav>
             <div class="card">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                <i class="fa-solid fa-cart-shopping" id="cart_icon"></i>
+                <i class="fa-solid fa-bars" id="navbar_icon"></i>
             </div>
+            <div class="search-container" id="search-container">
+                <input type="text" placeholder="Search...!">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </div>
+            <aside class="cart-sidebar" id="cart-sidebar-container">
+              <div class="cart">
+                <div class="img">
+                <img src="./assets/images/30.jpg" alt="Cart Image">
+                </div>
+                <div class="cart-info">
+                    <h3>Cart Item 01</h3>
+                    <h4>$150.99</h4>
+                </div>
+                <div class="delete-cart">
+                    <i class="fa-solid fa-xmark fa-2x" id="delete-product"></i>
+                </div>
+              </div>
+              <div class="cart">
+                <div class="img">
+                <img src="./assets/images/31.jpg" alt="Cart Image">
+                </div>
+                <div class="cart-info">
+                    <h3>Cart Item 02</h3>
+                    <h4>$300.99</h4>
+                </div>
+                <div class="delete-cart">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </div>
+              </div>
+              <div class="cart">
+                <div class="img">
+                <img src="./assets/images/52.jpg" alt="Cart Image">
+                </div>
+                <div class="cart-info">
+                    <h3>Cart Item 03</h3>
+                    <h4>$450.99</h4>
+                </div>
+                <div class="delete-cart">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </div>
+              </div>
+              <div class="cart">
+                <div class="img">
+                <img src="./assets/images/62.jpg" alt="Cart Image">
+                </div>
+                <div class="cart-info">
+                    <h3>Cart Item 04</h3>
+                    <h4>$150.99</h4>
+                </div>
+                <div class="delete-cart">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </div>
+              </div>
+              <div class="cart">
+                <div class="img">
+                <img src="./assets/images/60.jpg" alt="Cart Image">
+                </div>
+                <div class="cart-info">
+                    <h3>Cart Item 05</h3>
+                    <h4>$150.99</h4>
+                </div>
+                <div class="delete-cart">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </div>
+              </div>
+              <a href="#"><button>Checkout Now!</button></a>
+            </aside>
+            <nav class="nav-sidebar" id="nav-sidebar">
+                <ul>
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#experience-section">Experience</a></li>
+                    <li><a href="#services-section">Services</a></li>
+                    <li><a href="#review-section">Review</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li><a href="#footer-section">Footer</a></li>
+                </ul>
+            </nav>
         </header>
         <!-- End Header -->
 
@@ -178,13 +255,34 @@
         <!-- End Services -->
 
         <!-- Start Review -->
+
         <!-- End Review -->
 
         <!-- Start Contact -->
+        <section id="contact-section" class="contact-section">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27671.552462278196!2d31.23921452711489!3d29.894712505459378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145849095b3e16a7%3A0xba7c8ececdef42dc!2z2KPYqNmIINi12YrYsdiMINmF2LHZg9iyINin2YTYqNiv2LHYtNmK2YbYjCDYp9mE2KzZitiy2Kk!5e0!3m2!1sar!2seg!4v1689007492495!5m2!1sar!2seg"></iframe>
+            </div>
+            <div class="form">
+                <div class="title">
+                    <h1>Find us Here</h1>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input">
+                    <input type="number" placeholder="Number" min="0">
+                </div>
+                <button><a href="#">Contact Here</a></button>
+            </div>
+        </section>
         <!-- End Contact -->
 
         <!-- Start Footer -->
-        <footer id="footer-section" class="footer-section">
+    <footer id="footer-section" class="footer-section">
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -192,21 +290,23 @@
                 <a href="#"><i class="fa-brands fa-github"></i></a>
             </div>
             <nav class="sections-links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Experience</a>
-                <a href="#">Services</a>
-                <a href="#">Review</a>
-                <a href="#">Contact</a>
+                <a href="#hero-section">Home</a>
+                <a href="#about-section">About</a>
+                <a href="#experience-section">Experience</a>
+                <a href="#services-section">Services</a>
+                <a href="#review-section">Review</a>
+                <a href="#contact-section">Contact</a>
             </nav>
             <div class="copyrights">
                 <h1>
                     Design By &hearts;
-                    <span><a href="#">Senior Omar</a></span><br>
-                    | Coded By &hearts; <span><a href="#">Ziad Wael</a></span>
+                    <span><a href="#">Senior Omar</a></span><br> 
+                    Coded By &hearts; <span><a href="#">Ziad Wael</a></span>
                 </h1>
             </div>
         </footer>
         <!-- End Footer -->
+        <!-- Javascript File -->
+        <script src="./main.js"></script>
     </body>
 </html>

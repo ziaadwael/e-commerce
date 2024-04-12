@@ -91,8 +91,7 @@ body .header-section {
     padding: 1.2rem 7rem;
     border: var(--main-border);
     position: fixed;
-    top: 0;
-    z-index: 9999999999999;
+    z-index: 999;
 }
 
 header .logo h1 {
@@ -139,6 +138,220 @@ header .card i {
 header .card i:last-child {
     display: none;
 }
+
+.search-container {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 20px;
+    border-radius: 15px;
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
+    transition: transform .3s linear;
+    -webkit-transition: transform .3s linear;
+    -moz-transition: transform .3s linear;
+    -ms-transition: transform .3s linear;
+    -o-transition: transform .3s linear;
+}
+
+.search-container input {
+    width: 80%;
+    height: 65%;
+    border: 2px solid #000;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+
+.search-container input::placeholder {
+    text-align: center;
+}
+
+.search-container i {
+    color: #000;
+}
+
+.search-container.active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.cart-sidebar {
+    width: 25%;
+    position: absolute;
+    right: 11px;
+    top: 100%;
+    background-color: #DDD;
+    padding: 2rem;
+    border-radius: 0.8rem 0 0.8rem 0.8rem;
+    -webkit-border-radius: 0.8rem 0 0.8rem 0.8rem;
+    -moz-border-radius: 0.8rem 0 0.8rem 0.8rem;
+    -ms-border-radius: 0.8rem 0 0.8rem 0.8rem;
+    -o-border-radius: 0.8rem 0 0.8rem 0.8rem;
+    transition: transform .3s linear;
+    -webkit-transition: transform .3s linear;
+    -moz-transition: transform .3s linear;
+    -ms-transition: transform .3s linear;
+    -o-transition: transform .3s linear;
+    transform: translateX(105%);
+    -webkit-transform: translateX(105%);
+    -moz-transform: translateX(105%);
+    -ms-transform: translateX(105%);
+    -o-transform: translateX(105%);
+}
+
+.cart-sidebar .cart {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.cart-sidebar .cart::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -15px;
+    background-color: #000;
+}
+
+.cart-sidebar .cart h4 {
+    margin-top: 20px;
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+.cart-sidebar .cart i {
+    color: #000;
+}
+
+.cart-sidebar img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.cart-sidebar img:hover {
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+}
+
+.cart-sidebar a button{
+    margin-top: 5%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    transition: var(--main-transition);
+    border-radius: 20px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.cart-sidebar.active {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.nav-sidebar {
+    width: 25%;
+    height: 55vh;
+    position: absolute;
+    right: 11px;
+    top: 100%;
+    background-color: #DDD;
+    padding: 2rem;
+    border-radius: 0.8rem 0 0.8rem 0.8rem;
+    -webkit-border-radius: 0.8rem 0 0.8rem 0.8rem;
+    -moz-border-radius: 0.8rem 0 0.8rem 0.8rem;
+    -ms-border-radius: 0.8rem 0 0.8rem 0.8rem;
+    -o-border-radius: 0.8rem 0 0.8rem 0.8rem;
+    transition: transform .3s linear;
+    -webkit-transition: transform .3s linear;
+    -moz-transition: transform .3s linear;
+    -ms-transition: transform .3s linear;
+    -o-transition: transform .3s linear;
+    transform: translateX(105%);
+    -webkit-transform: translateX(105%);
+    -moz-transform: translateX(105%);
+    -ms-transform: translateX(105%);
+    -o-transform: translateX(105%);
+}
+
+.nav-sidebar.active {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.nav-sidebar ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.nav-sidebar ul li {
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 /* End Header */
 
 /* Start Hero/Home */
@@ -329,7 +542,6 @@ header .card i:last-child {
     height: 55%;
     background-color: #ffffff1f;
     border: var(--main-border);
-    border-radius: 15px;
     backdrop-filter: blur(10px);
     position: relative;
     display: flex;
@@ -337,6 +549,11 @@ header .card i:last-child {
     justify-content: center;
     padding: 10% 20%;
     z-index: 10;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .experience-section .box::before {
@@ -410,7 +627,7 @@ header .card i:last-child {
 .services-section {
     width: 85%;
     height: 70%;
-    margin: 8rem auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -460,6 +677,11 @@ header .card i:last-child {
     gap: 3rem;
     padding: 5% 0;
     position: relative;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .services-section .box main {
@@ -487,6 +709,120 @@ header .card i:last-child {
     color: red;
 }
 /* End Services */
+
+/* Start Contact Section */
+
+.contact-section {
+    height: 45%;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #333;
+    position: relative;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.contact-section::before {
+    content: "Contact Us";
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: var(--main-color);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.contact-section .map {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+}
+
+.contact-section .map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.contact-section .form {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10%;
+    color: #fff;
+}
+
+.contact-section .form .title {
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-section .form > .input {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-section .form > .input input {
+    width: 65%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.contact-section .form > .input input::placeholder {
+    text-align: center;
+    color: #DDD;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+
+.contact-section .form button{
+    padding: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: var(--gold-color);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* End Contact Section */
 
 /* Start Footer */
 
@@ -561,7 +897,6 @@ footer.footer-section .copyrights {
 
 .copyrights {
     color: #fff;
-    padding: 0 15px;
 }
 .copyrights span a {
     color: var(--main-color);

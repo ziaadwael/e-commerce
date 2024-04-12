@@ -2,23 +2,49 @@
 
 @media screen and (width <= 1100px) {
     body::-webkit-scrollbar {
-        all:unset;
+        all: unset;
     }
-    
+
     body::-webkit-scrollbar-thumb {
         all: unset;
     }
     header .logo h1 {
         color: var(--main-color);
     }
-    header nav.links{
+    header nav.links {
         display: none;
     }
     header .card i:last-child {
-        display: var(--fa-display,inline-block) !important;
+        display: var(--fa-display, inline-block) !important;
+    }
+    .search-container {
+        transform: translateX(-150vh);
+        -webkit-transform: translateX(-150vh);
+        -moz-transform: translateX(-150vh);
+        -ms-transform: translateX(-150vh);
+        -o-transform: translateX(-150vh);
+}
+    .cart-sidebar {
+        height: 80vh;
+        transform: translateX(100vw);
+        -webkit-transform: translateX(100vw);
+        -moz-transform: translateX(100vw);
+        -ms-transform: translateX(100vw);
+        -o-transform: translateX(100vw);
+    }
+    .cart-sidebar .cart img {
+        width: 80px;
+        height: 80px;
+    }
+    .cart-sidebar.active {
+        width: 40%;
+        right: 0;
+    }
+    .nav-sidebar {
+        height: 80vh;
     }
     .hero-section {
-        background-size: 100% auto;
+        background-size: 100% 100%;
         align-items: center;
     }
     .hero-section .info {
@@ -32,7 +58,7 @@
     .hero-section h3 {
         font-size: 1rem;
     }
-    .experience-section{
+    .experience-section {
         all: unset;
         position: relative;
         width: 80%;
@@ -44,14 +70,14 @@
         gap: 5rem;
         background-color: var(--purple-color);
         padding: 2rem 0 4rem 0;
-        margin: 2rem auto;
+        margin: 5% auto;
         color: #fff;
         border-radius: 1.5rem;
         -webkit-border-radius: 1.5rem;
         -moz-border-radius: 1.5rem;
         -ms-border-radius: 1.5rem;
         -o-border-radius: 1.5rem;
-}
+    }
     .experience-section::before {
         top: -6.5rem;
         width: 100%;
@@ -73,6 +99,30 @@
     .services-section .box {
         width: 35%;
     }
+    .contact-section {
+        flex-direction: column;
+        height: 80%;
+    }
+    .contact-section::before {
+        top: -8rem;
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-section .map{
+        width: 100%;
+        height: 50%;
+        top: 0;
+    }
+    .contact-section .form {
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+    }
+    .contact-section .form .title {
+        top: 2%;
+        font-size: 2rem;
+    }
     footer.footer-section {
         width: 90%;
     }
@@ -82,10 +132,16 @@
     }
 }
 
-
 @media screen and (width <= 800px) {
     header {
         padding: 1rem 2rem;
+    }
+    .cart-sidebar.active {
+        width: 50%;
+    }
+    .nav-sidebar {
+        width: 50vw;
+        right: 0;
     }
     .about-section {
         flex-direction: column;
@@ -110,7 +166,12 @@
         font-size: 1.2rem;
     }
     .services-section {
-        margin: 25rem auto;
+        margin: 23rem auto;
+    }
+    .services-section::before {
+        top: -22rem;
+        width: 100%;
+        text-align: center;
     }
     .services-section .box {
         width: 50%;
@@ -121,6 +182,20 @@
     body .header-section {
         padding: 2rem;
     }
+    .hero-section {
+        background-image: none;
+        background-color: var(--purple-color);
+    }
+    .hero-section .info {
+        top: unset;
+    }
+    .cart-sidebar.active {
+        width: 90%;
+    }
+    .nav-sidebar {
+        width: 60%;
+        height: 65vh;
+    }
     .about-section p {
         padding: 0 10px;
     }
@@ -130,14 +205,35 @@
     .services-section {
         width: 100%;
         padding: unset;
+        margin: 23rem auto;
     }
     .services-section::before {
-        top: -23rem;
+        top: -22rem;
         width: 100%;
         text-align: center;
     }
     .services-section .box {
         width: 70%;
+    }
+    .contact-section {
+        width: 90%;
+        height: 100%;
+    }
+    .contact-section::before {
+        top: -4rem;
+    }
+    .contact-section .map {
+        height: 45%;
+    }
+    .contact-section .form .title {
+        top: -5%;
+    }
+    .contact-section .form .input input {
+        width: 90%;
+    }
+    .contact-section .form button {
+        padding: 10px;
+        bottom: 5px;
     }
     footer.footer-section {
         width: 90%;
@@ -163,5 +259,4 @@
         width: 200px;
         padding: 10px 0;
     }
-    
 }

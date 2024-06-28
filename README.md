@@ -26,5 +26,4 @@ This project is a simple e-commerce platform that allows users to browse and pur
 ## Important Links
 - [Live Site](https://e-commerce-eight-rosy.vercel.app/)
 ```
-
 Feel free to make any additional adjustments or let me know if you need further changes!

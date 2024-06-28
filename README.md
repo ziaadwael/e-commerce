@@ -7,13 +7,24 @@ This project is a simple e-commerce platform that allows users to browse and pur
 - Browse products in various categories.
 - View product details including prices and discounts.
 - Shopping cart and checkout process.
-
-## Technology Used
-1.HTML
-2.CSS
-3.JavaScript
+- Fully Responsive
 
 ## Installation and Running
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/ziaadwael/e-commerce.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd e-commerce
+   ```
+
+## Contributors
+- Design: Senior Omar
+- Development: Ziad Wael
+
+## Important Links
+- [Live Site](https://e-commerce-eight-rosy.vercel.app/)
+```
+
+Feel free to make any additional adjustments or let me know if you need further changes!

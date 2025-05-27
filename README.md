@@ -1,5 +1,7 @@
 # Static E-Commerce Platform
 
+![ecommerce Screenshot](https://i.postimg.cc/x8x5dXV5/ecommerce.png)
+
 ## Project Description
 This project is a simple e-commerce platform that allows users to browse and purchase a variety of products online. It is a frontend-only project with no backend, using HTML, CSS, and JavaScript.
 
